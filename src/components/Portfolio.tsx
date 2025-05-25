@@ -19,7 +19,7 @@ const Portfolio = () => {
     {
       title: 'Image Search Engine',
       description: 'Upload-based visual search tool with advanced image recognition capabilities.',
-      tech: ['React.js', 'Machine Learning', 'API Integration'],
+      tech: ['React.js', 'API Integration'],
       category: 'Web Application',
       
     },
@@ -100,11 +100,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-       <div className="mt-3">
-    <button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-4 rounded-lg text-base font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-md mt-4">
-      View Project
-    </button>
-  </div>
+    
               </div>
 
               {/* Ripple effect overlay */}
