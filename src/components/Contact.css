@@ -1,0 +1,51 @@
+
+      /* Contact.css */
+
+/* Base styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Ensure images or cards resize properly */
+.card,
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+
+  h1,
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Optional: Hide extra content or simplify layout */
+  .sidebar,
+  .non-essential {
+    display: none;
+  }
+}
+
+      
+    

@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import emailjs from '@emailjs/browser';
+import './Contact.css'
 
 const Contact = () => {
   const { toast } = useToast();
@@ -119,57 +120,6 @@ const Contact = () => {
 
   return (
     <>
-      <style>{`
-      /* Contact.css */
-
-/* Base styling */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 20px;
-}
-
-/* Ensure images or cards resize properly */
-.card,
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .card {
-    width: 100% !important;
-    margin: 10px 0;
-  }
-
-  h1,
-  p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .image-wrapper img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Optional: Hide extra content or simplify layout */
-  .sidebar,
-  .non-essential {
-    display: none;
-  }
-}
-
-      
-      `}</style>
       <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
